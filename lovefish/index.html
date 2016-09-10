@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>爱心鱼游戏-LM</title>
+    <meta charset= "utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="introduce">
+		<p class="title">游戏规则：</p>
+		<ul>
+			<li>1. 大鱼跟着鼠标的位置移动而吃到果实，如吃到红色果实，身体变红，画布下方的个数加1；如吃到蓝色果实，身体变蓝，画布下方的倍数加1。</li>
+			<li>2. 画布右上角显示着小鱼的体力值，初始为10，身体为红色，随着时间的推移，体力值减小，身体颜色变淡。</li>
+			<li>3. 大鱼吃到果实之后可以喂小鱼，此时小鱼的体力值会根据大鱼果实的数量相应增加，画布上方的分值等于画布下方的倍数乘以个数的累加和。</li>
+			<li>4. 当小鱼体力值减到0时，游戏结束；点击画布，则可重新开始游戏。好了，拯救小鱼行动开始，躁起来吧！</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="content" id="drawingBoard">
+			<canvas id="canvas1" width="800" height="600">
+			</canvas>
+			<canvas id="canvas2" width="800" height="600">
+			</canvas>
+			<audio id='bgAudio' src="audio/background.mp3" >你的浏览器不支持audio元素</audio>
+			<audio id='eatFruitAudio' src="audio/eatFruit.mp3" >你的浏览器不支持audio元素</audio>
+			<audio id='loseAudio' src="audio/lose.mp3" >你的浏览器不支持audio元素</audio>
+			<audio id='foodBabyAudio' src="audio/foodBaby.wav" >你的浏览器不支持audio元素</audio>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- <script type="text/javascript" src="js/aneObject.js"></script> -->
+</body>
+<!-- <script type="text/javascript">
+	jzk.startgame();
+</script> -->
+</html>
